@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //Format Title
         title = findViewById(R.id.title_txt);
         title.setTypeface(Typeface.DEFAULT_BOLD);
@@ -57,5 +58,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+    private void sendUserToNextActivity(){
+        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
     }
 }
