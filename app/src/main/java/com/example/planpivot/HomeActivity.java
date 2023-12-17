@@ -1,4 +1,8 @@
 package com.example.planpivot;
 
-public class HomeActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class HomeActivity extends AppCompatActivity {
+
 }
