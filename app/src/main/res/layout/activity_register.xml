@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/logo_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <EditText
+        android:id="@+id/username_ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_reg" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/conpass_ip"
+        app:layout_constraintStart_toStartOf="@+id/conpass_ip"
+        app:layout_constraintTop_toBottomOf="@+id/conpass_ip"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/alreadyacc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_btn"
+        app:layout_constraintStart_toStartOf="@+id/register_btn"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/pass_ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_ip"
+        app:layout_constraintStart_toStartOf="@+id/email_ip"
+        app:layout_constraintTop_toBottomOf="@+id/email_ip" />
+
+    <EditText
+        android:id="@+id/conpass_ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/pass_ip"
+        app:layout_constraintStart_toStartOf="@+id/pass_ip"
+        app:layout_constraintTop_toBottomOf="@+id/pass_ip" />
+
+    <EditText
+        android:id="@+id/email_ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/username_ip"
+        app:layout_constraintStart_toStartOf="@+id/username_ip"
+        app:layout_constraintTop_toBottomOf="@+id/username_ip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

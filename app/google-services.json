@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483866006354",
+    "project_id": "planpivot",
+    "storage_bucket": "planpivot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483866006354:android:18ef72faec4e1756d1a08b",
+        "android_client_info": {
+          "package_name": "com.example.planpivot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0-KpvD71lhzdorxPdbA0zwEtjEJ27Tfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
